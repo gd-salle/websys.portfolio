@@ -1,0 +1,197 @@
+/*all elements must have this style*/
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+#cover{
+    width: 100px;
+    height: 150px;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: 3px;
+}
+#title{
+    margin: 30px;
+    text-align: center;
+}
+/*img style*/
+img{
+    border: 3px solid black;
+    border-radius: 20px;
+}
+h4{
+    color:azure;
+    font-family: "consolar";
+}
+/*header1 style*/
+h1{
+    color: azure;
+    font-family: "Press Start 2P";
+    margin: 10px;
+}
+/*header2 style*/
+h2,a{
+    color:beige;
+    font-family: "Press Start 2P";
+    margin: 10px;
+    text-align: center;
+}
+/*paragraph style*/
+p{
+    color:bisque;
+    font-family: "consolas";
+}
+/*body style*/
+body{
+    background-image: url(https://images.hdqwalls.com/download/colorful-galaxy-planets-4k-ih-1680x1050.jpg);
+}
+/**/
+.table{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/**/
+.hobby{
+    position: relative;
+    perspective: 1000px;
+    background-image:url(https://cdn.discordapp.com/attachments/765704469911699487/1078272273217237052/background.png);
+    width: 370px;
+    height: 560px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+/**/
+.hobby:hover{
+    transform: rotateY(180deg);
+}
+/**/
+.theFront{
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    backface-visibility: hidden;
+
+}
+/**/
+.theBack{
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    backface-visibility: hidden;
+    transform:rotateY(180deg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/**/
+.description{
+    position:absolute;
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+    background: linear-gradient(to bottom, #0d1c33, #1d2b4d, #2d3b67, #3d4c82, #4d5d9c);
+    border-radius: 10px;
+    text-align: justify;
+}
+
+
+.favToRead{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.category{
+    position: relative;
+    perspective: 1000px;
+    background-image:url(https://cdn.discordapp.com/attachments/765704469911699487/1078272273217237052/background.png);
+    width: 450px;
+    height: 665px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+}
+.theBack a{
+    text-decoration: none;
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+    text-align: center;
+}
+.main img{
+    width: 150px;
+    border-radius: 100px;
+}
+.favToPlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.play{
+    position: relative;
+    background-image:url(https://cdn.discordapp.com/attachments/765704469911699487/1078272273217237052/background.png);
+    width: 450px;
+    height: 665px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+}
+.favToEat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.food{
+    position: relative;
+    background-image:url(https://cdn.discordapp.com/attachments/765704469911699487/1078272273217237052/background.png);
+    width: 450px;
+    height: 665px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+}
+.favToPlay h1{
+    background: black;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+.favToEat h1{
+    background: black;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+.favToRead h1{
+    background: black;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
